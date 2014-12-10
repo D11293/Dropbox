@@ -1,0 +1,333 @@
+/************************ 
+ * Auteur: Gerber Denis *
+ * Date: 27 août 2014   *
+ * Lieu: Renens         *
+ * Type: CSS            *
+************************/
+
+html{
+	height:100%;
+}
+body{
+	margin: 0 auto;
+	height: 100%;
+}
+/*Propriété du Header*/
+
+/*Propriété du Footer*/
+
+/*Propriété du contenu, c'est à dire 
+ce qu'il y a entre le header et le footer*/
+
+#contenu{
+	height: 940px;
+	width: 100%;
+/*Propriété des 3 panneaux
+Entête, Items*/
+}
+.user{
+	width:100%;
+	height:100%;
+	background-color: #007EE5;
+	color:#fff;
+	text-align:center;
+	font-size: 20px;
+
+}
+.admin{
+	width:100%;
+	height:100%;
+	background-color: #BABEC8;
+	color:#fff;
+	text-align:center;
+	font-size: 20px;
+}
+.user h1{
+	font-size: 50px;
+	font-family: "Helvetica";
+	font-weight:bold;
+	padding-top: 200px;
+	margin-top: 0px;
+
+}
+.admin h1{
+	font-size: 50px;
+	font-family: "Helvetica";
+	font-weight:bold;
+	padding-top: 200px;
+	margin-top: 0px;	
+}
+.user p{
+	margin-bottom:0px; 
+	font-family: Helvetica;
+}
+.admin p{
+	margin-bottom:0px; 
+	font-family: Helvetica;
+}
+.user button{
+	margin-top: 40px;
+	width: 150px;
+	height:45px;
+}
+.admin button{
+	margin-top: 40px;
+	width: 150px;
+	height:45px;
+}
+.user img{
+	margin-top: 10px;
+	float:left;
+}
+.admin img{
+	margin-top: 10px;
+	float:left;
+}
+.business{
+	width:100%;
+	height:100%;	
+}
+.highlights2{
+	
+	width:300px;
+	height: 200px;
+	background-color: #A0CEF2;
+}
+.syw{
+	margin-top: 40px;
+	width:300px;
+	height: 200px;
+	background-color: #F69B81;
+}
+.security2{
+	margin-top: 40px;
+	width:300px;
+	height: 200px;
+	background-color: #9C8272;
+}
+.suyd{
+	width:300px;
+	height: 200px;
+	background-color: #7EDD94;
+}
+.mf{
+	margin-top: 40px;
+	width:300px;
+	height: 200px;
+	background-color: #A090FF;
+}
+
+.account2{
+	margin-top: 40px;
+	width:300px;
+	height: 200px;
+	background-color: #848BA0;
+}
+.colonne1{
+	margin-top: 40px;
+	float:left;
+	margin-left:125px;
+}
+.colonne2{
+	margin-top: 40px;
+	float:right;
+	margin-right:125px;
+}
+.highlights{
+	width:100%;
+	height:100%;
+	background-color: #A0CEF2;
+	font-size: 20px;	
+	color:#fff;
+}
+.highlights h1{
+	font-size: 50px;
+	font-family: "Helvetica";
+	font-weight:bold;
+	margin-top: 0px;	
+	margin-left: 100px;
+}
+.highlights a{
+	text-decoration: none;
+	margin-left: 100px;
+	font-size: 15px;
+	color:#fff;
+}
+.highlights a:hover{
+	text-decoration: none;
+	color:#fff;
+}
+.separation{
+	height: 1px;
+	width: 100%;
+	background-color: #DBDBDB;
+}
+.separation2{
+	height: 1px;
+	width: 100%;
+	background-color: #DBDBDB;
+	margin-bottom: 30px;
+	margin-top: 50px;
+}
+.yes{
+	height: 30px;
+	width: 100px;
+	border-radius: 50px;
+	background-color: #8CE19F;
+	color:#fff;
+	float: left;
+	margin-left:350px;
+	margin-right:20px;
+}
+.no{
+	height: 30px;
+	width: 100px;
+	border-radius: 50px;
+	background-color:#F79C82;
+	color:#fff;
+	float: right;
+	margin margin-bottom: 40px;
+	margin-right:350px;
+}
+.next{
+	float:right;
+}
+.Set_up{
+	background-color: #7EDD94;
+	font-size: 20px;	
+	color:#fff;
+	width:100%;
+	height:100%;
+}
+.Set_up h1{
+	font-size: 50px;
+	font-family: "Helvetica";
+	font-weight:bold;
+	margin-top: 0px;	
+	margin-left: 100px;
+}
+.Set_up a{
+	text-decoration: none;
+	margin-left: 100px;
+	font-size: 15px;
+	color:#fff;
+}
+.Set_up a:hover{
+	text-decoration: none;
+	color:#fff;
+}
+.petit_trait{
+	height: 2px;
+	width: 50px;
+	background-color: #DBDBDB;
+}
+.share_work{
+	background-color: #F69B81;
+	font-size: 20px;	
+	color:#fff;
+	width:100%;
+	height:100%;
+}
+.share_work h1{
+	font-size: 50px;
+	font-family: "Helvetica";
+	font-weight:bold;
+	margin-top: 0px;	
+	margin-left: 100px;
+}
+.share_work a{
+	text-decoration: none;
+	margin-left: 100px;
+	font-size: 15px;
+	color:#fff;
+}
+.share_work a:hover{
+	text-decoration: none;
+	color:#fff;
+}
+.manage_files{
+	background-color: #A090FF;
+	font-size: 20px;	
+	color:#fff;
+	width:100%;
+	height:100%;
+}
+.manage_files h1{
+	font-size: 50px;
+	font-family: "Helvetica";
+	font-weight:bold;
+	margin-top: 0px;	
+	margin-left: 100px;
+}
+.manage_files a{
+	text-decoration: none;
+	margin-left: 100px;
+	font-size: 15px;
+	color:#fff;
+}
+.manage_files a:hover{
+	text-decoration: none;
+	color:#fff;
+}
+.security{
+	background-color: #9C8272;
+	font-size: 20px;	
+	color:#fff;
+	width:100%;
+	height:100%;
+}
+.security h1{
+	font-size: 50px;
+	font-family: "Helvetica";
+	font-weight:bold;
+	margin-top: 0px;	
+	margin-left: 100px;
+}
+.security a{
+	text-decoration: none;
+	margin-left: 100px;
+	font-size: 15px;
+	color:#fff;
+}
+.security a:hover{
+	text-decoration: none;
+	color:#fff;
+}
+.account{
+	background-color: #848BA0;
+	font-size: 20px;	
+	color:#fff;
+	width:100%;
+	height:100%;
+}
+.account h1{
+	font-size: 50px;
+	font-family: "Helvetica";
+	font-weight:bold;
+	margin-top: 0px;	
+	margin-left: 100px;
+}
+.account a{
+	text-decoration: none;
+	margin-left: 100px;
+	font-size: 15px;
+	color:#fff;
+}
+.account a:hover{
+	text-decoration: none;
+	color:#fff;
+}
+.col-sm-12 .col-md-12{
+	.security{
+		height:50%;
+		width:100%;
+	}
+	.user{
+		height:50%;
+		width:100%;
+	}
+	.admin{
+		height:50%;
+		width:100%;
+	}
+}

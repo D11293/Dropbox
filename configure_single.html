@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="bootstrap-3.2.0\dist\css\bootstrap.css">
+<link rel="icon" type="image/png" href="images/dropbox.png" />
+<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>      			
+
+	<head>
+	<meta charset="utf-8">
+		<title>Dropbox - Guide</title>
+	</head>
+<body>
+
+<div id="contenu">
+<div class="col-sm-12 col-md-12 col-lg-6 security">
+<a href="admin.html">← Table of contents</a>
+<h1>Security</h1>
+</div>
+<div class="col-sm-12 col-md-12 col-lg-6 business">
+<h1>Configure single sign-on</h1>
+<p><em>If you already use an identity provider or Active Directory at your company, single sign-on (SSO) makes life easier and more secure for your business.</em></p>
+<p>Dropbox uses the secure and widely adopted industry standard Security Assertion Markup Language 2.0 (SAML 2.0), which means our implementation of SSO integrates easily with any large identity provider that supports SAML 2.0. We also support AD FS.</p>
+<p>Dropbox has partnered with several identity providers, including Ping Identity, OneLogin, Okta, and Centrify, to offer a pre-configured app that makes setup easy.</p> 
+<p>Of course, since Dropbox uses SAML 2.0, you can still use SSO with any SAML-supported identity provider, or you can even create your own SSO implementation.</p>
+<div class="separation"></div>
+<h1>Configuring SSO with one of Dropbox's partners</h1>
+<center><img src="images/image7_Collaborate.PNG"></center>
+<p>To get started, go to your identity provider's site and follow the instructions to configure single sign-on.</p>
+<p>See a list of our identity provider partners.</p>
+<p>Once you've gone through your identity provider's setup:</p>
+<ol>
+	<li>Sign in to Dropbox with your admin account and click on Admin Console in the left-hand sidebar.</li>
+	<li>In the Admin Console, click on Authentication in the sidebar.</li>
+	<li>Under Single sign-on, select the Enable single sign-on checkbox.</li>
+	<li>Choose whether to make single sign-on optional or required.</li>
+	<li>Enter the Sign in URL you got earlier from the identity provider.</li>
+	<li>Click the Choose certificate button. Upload the X.509 certificate .pem file you got from the identity provider earlier.</li>
+	<li>Click the Save changes button.</li>
+</ol>
+			<div class="petit_trait"></div>
+	<p>Have more questions? Check out these helpful articles:</p>
+	<ul>
+		<li>? Frequently asked questions about single sign-on (SSO) for admins</li>
+		<li>? How do I connect Dropbox to AD FS for single sign-on (SSO)?</li>
+	</ul>	
+<div class="separation"></div>
+<h1>Using SSO</h1>
+<center><img src="images/image2_Check_Out.PNG"></center>
+<p>Here's some important information about SSO once you have it configured:</p>
+<p><em>Prepare your users</em></p>
+<p>If you make single sign-on required, Dropbox will automatically notify team members by email. If you make single sign-on optional, you'll need to notify them yourself. You can download an email template from the single sign-on section of the Admin Console.</p>
+<p><em>Accessing the website</em></p>
+<p>Once single sign-on is turned on, users can sign in to Dropbox by entering just their email address and leaving the password field blank. This will redirect them to your identity provider's sign-in page, where they can enter their work credentials.</p>
+<p>As part of SSO setup, we'll provide you with a custom Dropbox URL. This URL will enable users to go directly to their Dropbox account online if they've already signed in to your identity provider.</p>
+<p><em>Linking computers and mobile devices</em></p>
+<p>All computers and mobile devices that are currently linked to Dropbox accounts will continue to work as normal. If they haven't signed in to your identity provider, they'll be automatically redirected to do so. They'll also be prompted to take a few other simple steps:</p>
+<ul>When users link a computer, Dropbox will direct them to copy a special link code from the website and paste it into the application.</ul>
+<ul>When users link a mobile device, they'll be asked to approve a request to connect the app to their account.</ul>
+			<div class="petit_trait"></div>
+	<p>Have more questions? Check out these helpful articles:</p>
+	<ul>
+		<li>? Frequently asked questions about single sign-on (SSO) for admins</li>
+	</ul>	
+<div class="separation"></div>
+<h1>Configuring SSO with an alternate identity provider</h1>
+<center><img src="images/image1_configure_single.PNG"></center>
+<p>If you'd like to configure your own solution or use a different identity provider, here are the parameters you'll need:</p>
+<ul>
+	<li>Dropbox uses SAML2 with the HTTP Redirect binding for SP to IdP and expects the HTTP Post binding for IdP to SP.</li>
+	<li>The Dropbox post-back URL (also called the Assertion Consumer Service URL) is https://www.dropbox.com/saml_login</li>
+	<li>Dropbox requires that the NameID contain the user's email address. Technically we are looking for: Format="urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress"</li>
+	<li>Your identity provider may ask if you want to sign the SAML assertion, the SAML response, or both. Dropbox requires the SAML response to be signed. You can choose signed or unsigned for the SAML assertion.</li>
+</ul>
+<p>You'll need to find two pieces of information to give Dropbox:</p>
+<ul>
+	<li>A sign-in page URL (also called a login URL).</li>
+	<li>An X.509 certificate. This is a security certificate that you usually get from your identity provider and must be in the .pem format.</li>
+</ul>
+<div class="petit_trait"></div>
+	<p>Have more questions? Check out these helpful articles:</p>
+	<ul>
+		<li>? Frequently asked questions about single sign-on (SSO) for admins</li>
+		<li>? How do I connect Dropbox to AD FS for single sign-on (SSO)?</li>
+	</ul>	
+<div class="separation"></div>
+<center><h1>Was this article helpful?</h1></center>
+<center><div class="yes">:) Yes</div><div class="no">:( No</div></center>
+<div class="separation2"></div>
+<a class="previous" href="Encourage_two_step.html">← Previous</a>
+<a class="next" href="Track_team.html">Next →</a>
+	</div>
+	</body>
+</html>
